@@ -12,3 +12,18 @@ hubble:
   enabled: true
   relay:
     enabled: true
+  ui:
+    enabled: true
+    ingress:
+      enabled: False
+      hosts:
+        - chart-example.local
+
+ingressController:
+  enabled: true
+  loadbalancerMode: dedicated
+  default: true
+  service:
+    insecureNodePort: 30000
+    secureNodePort: 30001
+    type: NodePort
