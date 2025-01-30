@@ -1,6 +1,0 @@
-image:
-  pullPolicy: IfNotPresent
-
-ipam:
-  mode: kubernetes
-
