@@ -21,7 +21,7 @@ hubble:
 
 ingressController:
   enabled: true
-  loadbalancerMode: dedicated
+  loadbalancerMode: shared
   default: true
   service:
     insecureNodePort: 30000
