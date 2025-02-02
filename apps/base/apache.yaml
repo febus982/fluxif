@@ -31,7 +31,8 @@ spec:
   selector:
     app: myapp
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 80
   type: ClusterIP # Change to LoadBalancer if you want an external IP
