@@ -1,0 +1,5 @@
+services:
+  nginx:
+    image: nginx:1.21
+    ports:
+      - "9999:80"
