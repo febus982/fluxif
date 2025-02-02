@@ -15,9 +15,9 @@ hubble:
   ui:
     enabled: true
     ingress:
-      enabled: False
+      enabled: true
       hosts:
-        - chart-example.local
+        - hubble.127.0.0.1.nip.io
 
 ingressController:
   enabled: true
