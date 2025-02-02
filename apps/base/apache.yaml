@@ -2,18 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-deployment
+  name: myapp
+  namespace: default
   labels:
-    app: example-app
+    app: myapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: example-app
+      app: myapp
   template:
     metadata:
       labels:
-        app: example-app
+        app: myapp
     spec:
       containers:
         - name: example-container
@@ -24,10 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: example-service
+  name: myapp
+  namespace: default
 spec:
   selector:
-    app: example-app
+    app: myapp
   ports:
     - protocol: TCP
       port: 80
