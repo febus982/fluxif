@@ -13,7 +13,7 @@ spec:
   interval: 10m
   url: oci://ghcr.io/telepresenceio/telepresence-oss
   ref:
-    tag: latest
+    tag: 2.21.2
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
