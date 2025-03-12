@@ -27,3 +27,6 @@ ingressController:
     insecureNodePort: 30000
     secureNodePort: 30001
     type: NodePort
+
+gatewayAPI:
+  enabled: true
