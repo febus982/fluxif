@@ -1,0 +1,15 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: nip-io
+spec:
+  gatewayClassName: cilium
+  listeners:
+  - hostname: nip.io
+    name: nip-io-http
+    port: 30002
+    protocol: HTTP
+  - hostname: nip.io
+    name: nip-io-https
+    port: 30003
+    protocol: HTTPS
